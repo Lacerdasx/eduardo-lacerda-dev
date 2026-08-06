@@ -24,7 +24,7 @@ export const experience: TimelineEntry[] = [
   {
     id: 'lize',
     role: 'Desenvolvedor de Software',
-    org: 'Lize — Plataforma VitrineOOH',
+    org: 'Lize (Plataforma VitrineOOH)',
     period: 'Novembro 2025 – Atual',
     bullets: [
       'Desenvolvimento e manutenção de funcionalidades backend com C#, .NET e ASP.NET Core.',
@@ -59,9 +59,9 @@ export const education: EducationEntry[] = [
 ];
 
 export const accessControlItems: string[] = [
-  'Keycloak — provedor de identidade (OIDC)',
-  'JWT — autenticação stateless',
-  'RBAC — controle de acesso baseado em papéis',
+  'Keycloak: provedor de identidade (OIDC)',
+  'JWT: autenticação stateless',
+  'RBAC: controle de acesso baseado em papéis',
   'Isolamento de dados por cliente (multi-tenancy)',
 ];
 

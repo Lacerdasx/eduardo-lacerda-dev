@@ -6,7 +6,7 @@ export function Footer() {
       <p>© {year} Eduardo Lacerda. Todos os direitos reservados.</p>
       <p>
         Vídeo de fundo do Hero: asset de demonstração do template &quot;Prisma
-        Creative Studio&quot; (Aura.build) — uso e direitos não confirmados,
+        Creative Studio&quot; (Aura.build). Uso e direitos não confirmados,
         substituir antes de publicação pública.
       </p>
     </footer>

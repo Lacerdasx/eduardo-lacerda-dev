@@ -20,7 +20,7 @@ export function Timeline() {
           <ScrollReveal key={entry.id} delay={0.1 + i * 0.05}>
             <article className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
               <h4 className="text-lg font-medium text-[#E1E0CC]">
-                {entry.role} — {entry.org}
+                {entry.role} · {entry.org}
               </h4>
               <p className="mt-1 text-sm text-[#E1E0CC]/60">{entry.period}</p>
               <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-[#E1E0CC]/80">
@@ -43,7 +43,7 @@ export function Timeline() {
           <ScrollReveal key={entry.id} delay={0.1 + i * 0.05}>
             <article className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
               <h4 className="text-lg font-medium text-[#E1E0CC]">
-                {entry.course} — {entry.institution}
+                {entry.course} · {entry.institution}
               </h4>
               <p className="mt-1 text-sm text-[#E1E0CC]/60">
                 {entry.period} · {entry.status}
