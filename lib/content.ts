@@ -8,7 +8,7 @@ import type {
 
 export const heroName = 'EDUARDO LACERDA';
 export const heroRole = 'Desenvolvedor de Software';
-export const heroTagline = 'Guarulhos % DEV — vigiando o código à noite';
+export const heroTagline = 'Guarulhos % DEV';
 
 export const aboutText =
   'Desenvolvedor de Software com experiência na evolução de uma plataforma SaaS ' +

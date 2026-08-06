@@ -6,7 +6,7 @@ describe('PrismaHero', () => {
   it('renders name, role, tagline and every nav link', () => {
     render(<PrismaHero />);
     expect(screen.getByText('Desenvolvedor de Software')).toBeInTheDocument();
-    expect(screen.getByText('Guarulhos % DEV — vigiando o código à noite')).toBeInTheDocument();
+    expect(screen.getByText('Guarulhos % DEV')).toBeInTheDocument();
     expect(screen.getByText('EDUARDO')).toBeInTheDocument();
     expect(screen.getByText('LACERDA')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: 'Contato' })).toHaveAttribute('href', '#contact');
