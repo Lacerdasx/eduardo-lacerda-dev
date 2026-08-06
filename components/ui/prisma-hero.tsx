@@ -3,7 +3,7 @@
 import { motion, useInView } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { useRef } from 'react';
-import { heroName, heroRole, heroTagline } from '@/lib/content';
+import { heroName, heroRole } from '@/lib/content';
 
 const navItems = [
   { label: 'Sobre', href: '#about' },
@@ -89,20 +89,11 @@ export function PrismaHero() {
               </h1>
             </div>
             <div className="col-span-12 flex flex-col gap-5 pb-6 lg:col-span-4 lg:pb-10">
-              <motion.p
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-                className="text-xs text-primary/70 sm:text-sm md:text-base"
-                style={{ lineHeight: 1.2 }}
-              >
-                {heroTagline}
-              </motion.p>
               <motion.a
                 href="#contact"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
                 className="group inline-flex items-center gap-2 self-start rounded-full bg-primary py-1 pl-5 pr-1 text-sm font-medium text-black transition-all hover:gap-3 sm:text-base"
               >
                 Falar comigo
