@@ -76,8 +76,22 @@ export const stack: StackCategory[] = [
 ];
 
 export const projects: Project[] = [
-  { id: 'placeholder-1', title: 'EM BREVE', description: 'Projeto a ser adicionado.', tags: ['web'], url: null, placeholder: true },
-  { id: 'placeholder-2', title: 'EM BREVE', description: 'Projeto a ser adicionado.', tags: ['tool'], url: null, placeholder: true },
+  {
+    id: 'school-manager',
+    title: 'SchoolManager',
+    description: 'Projeto para identificar o aprendizado em Programação Orientada a Objetos, com foco em gestão escolar.',
+    tags: ['dashboard'],
+    url: 'https://github.com/xibaloko/SchoolManager',
+    placeholder: false,
+  },
+  {
+    id: 'blackjack',
+    title: 'BlackJack',
+    description: 'Jogo de Black Jack implementado em C#.',
+    tags: ['game'],
+    url: 'https://github.com/Lacerdasx/BlackJack',
+    placeholder: false,
+  },
   { id: 'placeholder-3', title: 'EM BREVE', description: 'Projeto a ser adicionado.', tags: ['dashboard'], url: null, placeholder: true },
 ];
 

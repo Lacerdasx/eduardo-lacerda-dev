@@ -8,4 +8,15 @@ describe('Projects', () => {
     render(<Projects />);
     expect(screen.getAllByRole('heading', { level: 3 })).toHaveLength(projects.length);
   });
+
+  it('links real projects to their GitHub repo', () => {
+    render(<Projects />);
+    const real = projects.filter((p) => !p.placeholder && p.url);
+    for (const project of real) {
+      expect(screen.getByRole('link', { name: new RegExp(project.title) })).toHaveAttribute(
+        'href',
+        project.url,
+      );
+    }
+  });
 });

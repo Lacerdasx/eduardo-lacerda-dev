@@ -10,14 +10,28 @@ export function Projects() {
         </h2>
       </ScrollReveal>
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, i) => (
-          <ScrollReveal key={project.id} delay={i * 0.05}>
-            <article className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+        {projects.map((project, i) => {
+          const cardClassName =
+            'block rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition-colors hover:border-white/30';
+          const content = (
+            <>
               <h3 className="text-lg font-medium text-[#E1E0CC]">{project.title}</h3>
               <p className="mt-2 text-sm text-[#E1E0CC]/70">{project.description}</p>
-            </article>
-          </ScrollReveal>
-        ))}
+            </>
+          );
+
+          return (
+            <ScrollReveal key={project.id} delay={i * 0.05}>
+              {project.url ? (
+                <a href={project.url} target="_blank" rel="noreferrer" className={cardClassName}>
+                  {content}
+                </a>
+              ) : (
+                <article className={cardClassName}>{content}</article>
+              )}
+            </ScrollReveal>
+          );
+        })}
       </div>
     </section>
   );

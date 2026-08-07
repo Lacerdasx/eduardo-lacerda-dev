@@ -20,9 +20,10 @@ describe('content data', () => {
     expect(stack.map((c) => c.id)).toContain('backend');
   });
 
-  it('marks all seed projects as placeholders', () => {
-    expect(projects.length).toBeGreaterThan(0);
-    expect(projects.every((p) => p.placeholder)).toBe(true);
+  it('has at least one real project linking to GitHub', () => {
+    const real = projects.filter((p) => !p.placeholder);
+    expect(real.length).toBeGreaterThan(0);
+    expect(real.every((p) => p.url?.startsWith('https://github.com/'))).toBe(true);
   });
 
   it('has the real contact info', () => {
