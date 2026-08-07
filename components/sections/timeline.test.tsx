@@ -9,4 +9,12 @@ describe('Timeline', () => {
     expect(screen.getByText(/Universidade Cruzeiro do Sul/)).toBeInTheDocument();
     expect(screen.getByText(/EBAC/)).toBeInTheDocument();
   });
+
+  it('links the Lize entry to the VitrineOOH site', () => {
+    render(<Timeline />);
+    expect(screen.getByRole('link', { name: /VitrineOOH/ })).toHaveAttribute(
+      'href',
+      'https://www.vitrineooh.com.br/',
+    );
+  });
 });

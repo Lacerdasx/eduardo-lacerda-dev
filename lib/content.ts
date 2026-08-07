@@ -25,6 +25,7 @@ export const experience: TimelineEntry[] = [
     id: 'lize',
     role: 'Desenvolvedor de Software',
     org: 'Lize (Plataforma VitrineOOH)',
+    orgUrl: 'https://www.vitrineooh.com.br/',
     period: 'Novembro 2025 – Atual',
     bullets: [
       'Desenvolvimento e manutenção de funcionalidades backend com C#, .NET e ASP.NET Core.',

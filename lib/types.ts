@@ -2,6 +2,7 @@ export interface TimelineEntry {
   id: string;
   role: string;
   org: string;
+  orgUrl?: string;
   period: string;
   bullets: string[];
 }
