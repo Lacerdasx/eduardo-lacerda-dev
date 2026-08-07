@@ -20,10 +20,16 @@ describe('content data', () => {
     expect(stack.map((c) => c.id)).toContain('backend');
   });
 
-  it('has at least one real project linking to GitHub', () => {
+  it('has at least one real project with a working link', () => {
     const real = projects.filter((p) => !p.placeholder);
     expect(real.length).toBeGreaterThan(0);
-    expect(real.every((p) => p.url?.startsWith('https://github.com/'))).toBe(true);
+    expect(real.every((p) => p.url?.startsWith('https://'))).toBe(true);
+  });
+
+  it('includes VitrineOOH among the real projects', () => {
+    const vitrine = projects.find((p) => p.id === 'vitrineooh');
+    expect(vitrine?.url).toBe('https://www.vitrineooh.com.br/');
+    expect(vitrine?.placeholder).toBe(false);
   });
 
   it('has the real contact info', () => {

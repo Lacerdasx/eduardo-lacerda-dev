@@ -93,7 +93,14 @@ export const projects: Project[] = [
     url: 'https://github.com/Lacerdasx/BlackJack',
     placeholder: false,
   },
-  { id: 'placeholder-3', title: 'EM BREVE', description: 'Projeto a ser adicionado.', tags: ['dashboard'], url: null, placeholder: true },
+  {
+    id: 'vitrineooh',
+    title: 'VitrineOOH',
+    description: 'Plataforma SaaS de auditoria e inteligência de mídia OOH da Lize, onde atuo como desenvolvedor.',
+    tags: ['dashboard'],
+    url: 'https://www.vitrineooh.com.br/',
+    placeholder: false,
+  },
 ];
 
 export const contact: ContactInfo = {
