@@ -1,6 +1,8 @@
 import { contact } from '@/lib/content';
 import { ScrollReveal } from '@/components/scroll-reveal';
 
+const GITHUB_HANDLE = contact.github.replace('https://github.com/', '');
+
 export function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-3xl px-4 py-24 sm:px-6 md:px-10">
@@ -21,13 +23,13 @@ export function Contact() {
           <li>
             <span className="text-[#E1E0CC]/50">GitHub: </span>
             <a href={contact.github} target="_blank" rel="noreferrer" className="underline underline-offset-4">
-              {contact.github}
+              {GITHUB_HANDLE}
             </a>
           </li>
           <li>
             <span className="text-[#E1E0CC]/50">LinkedIn: </span>
             <a href={contact.linkedin} target="_blank" rel="noreferrer" className="underline underline-offset-4">
-              {contact.linkedin}
+              Eduardo Lacerda
             </a>
           </li>
         </ul>
