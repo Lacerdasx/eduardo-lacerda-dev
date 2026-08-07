@@ -3,7 +3,7 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef } from 'react';
 
-const VIDEO_SRC = '/videos/mountain-base.mp4';
+const VIDEO_SRC = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/videos/mountain-base.mp4`;
 
 export function MountainTransition() {
   const sectionRef = useRef<HTMLElement>(null);
