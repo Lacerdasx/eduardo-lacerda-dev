@@ -15,4 +15,9 @@ describe('Footer', () => {
     expect(screen.getByText(/Prisma Creative Studio/)).toBeInTheDocument();
     expect(screen.getByText(/Aura\.build/)).toBeInTheDocument();
   });
+
+  it('credits the transition video as AI-generated', () => {
+    render(<Footer />);
+    expect(screen.getByText(/Vídeo de transição: gerado com IA\./)).toBeInTheDocument();
+  });
 });

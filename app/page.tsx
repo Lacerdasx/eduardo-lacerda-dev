@@ -1,4 +1,5 @@
 import { PrismaHero } from '@/components/ui/prisma-hero';
+import { MountainTransition } from '@/components/ui/mountain-transition';
 import { About } from '@/components/sections/about';
 import { Timeline } from '@/components/sections/timeline';
 import { Stack } from '@/components/sections/stack';
@@ -18,6 +19,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <MountainTransition />
     </>
   );
 }

@@ -8,6 +8,7 @@ export function Footer() {
         Vídeo de fundo do Hero: template &quot;Prisma Creative Studio&quot;
         (Aura.build).
       </p>
+      <p>Vídeo de transição: gerado com IA.</p>
     </footer>
   );
 }
