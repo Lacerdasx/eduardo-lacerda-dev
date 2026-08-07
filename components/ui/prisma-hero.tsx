@@ -1,6 +1,6 @@
 'use client';
 
-import { motion, useInView } from 'motion/react';
+import { motion, useInView, useScroll, useTransform } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { useRef } from 'react';
 import { heroName, heroRole } from '@/lib/content';
@@ -40,19 +40,32 @@ function WordsPullUp({ text }: { text: string }) {
 }
 
 export function PrismaHero() {
+  const heroRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ['start start', 'end start'],
+  });
+  const videoY = useTransform(scrollYProgress, [0, 1], ['0%', '15%']);
+  const sinkOpacity = useTransform(scrollYProgress, [0, 0.8], [0, 1]);
+
   return (
-    <section id="hero" className="h-screen w-full">
+    <section id="hero" ref={heroRef} className="h-screen w-full">
       <div className="relative h-full w-full overflow-hidden rounded-2xl md:rounded-[2rem]">
-        <video
+        <motion.video
+          style={{ y: videoY }}
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute -top-[10%] inset-x-0 h-[120%] w-full object-cover"
           src={HERO_VIDEO_SRC}
         />
         <div className="noise-overlay pointer-events-none absolute inset-0 opacity-[0.7] mix-blend-overlay" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black" />
+        <motion.div
+          style={{ opacity: sinkOpacity }}
+          className="pointer-events-none absolute inset-0 bg-black"
+        />
 
         <nav className="absolute left-1/2 top-0 z-20 -translate-x-1/2">
           <div className="flex items-center gap-3 rounded-b-2xl bg-black px-4 py-2 sm:gap-6 md:gap-12 md:rounded-b-3xl md:px-8 lg:gap-14">
