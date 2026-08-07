@@ -3,11 +3,11 @@ import { render, screen } from '@testing-library/react';
 import { Footer } from './footer';
 
 describe('Footer', () => {
-  it('renders a copyright notice with the current year and name', () => {
+  it('renders a copyright notice with the current year', () => {
     render(<Footer />);
     const year = new Date().getFullYear().toString();
     expect(screen.getByText(new RegExp(year))).toBeInTheDocument();
-    expect(screen.getByText(/Eduardo Lacerda/)).toBeInTheDocument();
+    expect(screen.getByText(/Todos os direitos reservados/)).toBeInTheDocument();
   });
 
   it('credits the source of the Hero background video', () => {
