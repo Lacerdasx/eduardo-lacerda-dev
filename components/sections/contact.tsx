@@ -11,18 +11,21 @@ export function Contact() {
       </ScrollReveal>
 
       <ScrollReveal delay={0.1}>
-        <ul className="mt-6 space-y-1 text-sm text-[#E1E0CC]/80">
+        <ul className="mt-6 space-y-3 text-base text-[#E1E0CC]/80 sm:text-lg">
           <li>
+            <span className="text-[#E1E0CC]/50">Email: </span>
             <a href={`mailto:${contact.email}`} className="underline underline-offset-4">
               {contact.email}
             </a>
           </li>
           <li>
+            <span className="text-[#E1E0CC]/50">GitHub: </span>
             <a href={contact.github} target="_blank" rel="noreferrer" className="underline underline-offset-4">
               {contact.github}
             </a>
           </li>
           <li>
+            <span className="text-[#E1E0CC]/50">LinkedIn: </span>
             <a href={contact.linkedin} target="_blank" rel="noreferrer" className="underline underline-offset-4">
               {contact.linkedin}
             </a>
