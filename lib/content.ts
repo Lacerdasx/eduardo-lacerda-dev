@@ -98,8 +98,7 @@ export const projects: Project[] = [
 ];
 
 export const contact: ContactInfo = {
-  phone: '(11) 98080-2502',
   email: 'sugiganedu@gmail.com',
   github: 'https://github.com/Lacerdasx',
-  location: 'Guarulhos – SP',
+  linkedin: 'https://www.linkedin.com/in/eduardo-lacerda-249356323',
 };

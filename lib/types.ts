@@ -33,8 +33,7 @@ export interface Project {
 }
 
 export interface ContactInfo {
-  phone: string;
   email: string;
   github: string;
-  location: string;
+  linkedin: string;
 }
