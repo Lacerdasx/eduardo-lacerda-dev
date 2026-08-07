@@ -1,7 +1,6 @@
 import { PrismaHero } from '@/components/ui/prisma-hero';
 import { About } from '@/components/sections/about';
 import { Timeline } from '@/components/sections/timeline';
-import { AccessControl } from '@/components/sections/access-control';
 import { Stack } from '@/components/sections/stack';
 import { Projects } from '@/components/sections/projects';
 import { Contact } from '@/components/sections/contact';
@@ -14,7 +13,6 @@ export default function Home() {
         <PrismaHero />
         <About />
         <Timeline />
-        <AccessControl />
         <Stack />
         <Projects />
         <Contact />

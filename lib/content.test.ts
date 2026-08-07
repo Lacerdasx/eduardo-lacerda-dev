@@ -15,9 +15,10 @@ describe('content data', () => {
     ]);
   });
 
-  it('has all seven stack categories', () => {
-    expect(stack).toHaveLength(7);
+  it('has all eight stack categories, including security', () => {
+    expect(stack).toHaveLength(8);
     expect(stack.map((c) => c.id)).toContain('backend');
+    expect(stack.map((c) => c.id)).toContain('seguranca');
   });
 
   it('has at least one real project with a working link', () => {

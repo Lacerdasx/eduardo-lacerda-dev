@@ -8,7 +8,6 @@ import { heroName, heroRole } from '@/lib/content';
 const navItems = [
   { label: 'Sobre', href: '#about' },
   { label: 'Currículo', href: '#timeline' },
-  { label: 'Controle de Acesso', href: '#access-control' },
   { label: 'Stack', href: '#stack' },
   { label: 'Projetos', href: '#projects' },
   { label: 'Contato', href: '#contact' },

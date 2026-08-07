@@ -10,7 +10,6 @@ describe('Home', () => {
     expect(screen.getByText('Desenvolvedor de Software')).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Sobre' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Currículo' })).toBeInTheDocument();
-    expect(screen.getByRole('heading', { name: 'Controle de Acesso' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Stack' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Projetos' })).toBeInTheDocument();
     expect(screen.getByRole('heading', { name: 'Contato' })).toBeInTheDocument();

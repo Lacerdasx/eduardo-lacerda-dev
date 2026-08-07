@@ -59,16 +59,10 @@ export const education: EducationEntry[] = [
   },
 ];
 
-export const accessControlItems: string[] = [
-  'Keycloak: provedor de identidade (OIDC)',
-  'JWT: autenticação stateless',
-  'RBAC: controle de acesso baseado em papéis',
-  'Isolamento de dados por cliente (multi-tenancy)',
-];
-
 export const stack: StackCategory[] = [
   { id: 'linguagens', label: 'Linguagens', items: ['C#', 'TypeScript', 'JavaScript', 'SQL', 'HTML', 'CSS'] },
   { id: 'backend', label: 'Backend', items: ['.NET', 'ASP.NET Core', 'APIs REST', 'Entity Framework Core', 'Dapper', 'MediatR', 'FluentValidation', 'Mapster', 'Swagger/OpenAPI'] },
+  { id: 'seguranca', label: 'Segurança', items: ['Keycloak', 'OIDC', 'JWT', 'RBAC'] },
   { id: 'frontend', label: 'Frontend', items: ['React', 'TypeScript', 'Vite', 'React Router', 'TanStack Query', 'TanStack Table', 'React Hook Form', 'Zod', 'Tailwind CSS', 'shadcn/ui', 'Radix UI', 'Recharts', 'Leaflet', 'Mapbox GL'] },
   { id: 'arquitetura', label: 'Arquitetura', items: ['Clean Architecture', 'Arquitetura Hexagonal', 'DDD', 'CQRS', 'Vertical Slice Architecture', 'Multi-tenancy'] },
   { id: 'dados', label: 'Banco de Dados', items: ['PostgreSQL', 'PostGIS', 'Migrations', 'Transações', 'Controle de concorrência'] },
